@@ -196,7 +196,10 @@ a { color: var(--primary); text-underline-offset: 3px; }
 
 /* Secciones */
 .section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
-.section--alt { background: var(--bg-alt); }
+.section--alt { background: var(--bg-alt); 
+              color= black;
+              
+              }
 .section__intro { color: var(--muted); font-size: 1.1rem; max-width: 70ch; }
 .two-col { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; align-items: center; }
 
