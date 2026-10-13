@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPI, Ubicador Personal Intuitivo — Navegación asistida para personas con discapacidad visual</title>
+  <meta name="description" content="Revisión sistemática sobre tecnologías portátiles de navegación asistida: efectividad, usabilidad y asequibilidad para personas con discapacidad visual.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- Barra de accesibilidad -->
+  <div class="a11y-bar" role="region" aria-label="Opciones de accesibilidad">
+    <div class="container a11y-bar__inner">
+      <span class="a11y-bar__title">Accesibilidad</span>
+      <div class="a11y-bar__controls">
+        <button type="button" id="btn-text-minus" aria-label="Reducir tamaño del texto">A−</button>
+        <button type="button" id="btn-text-plus" aria-label="Aumentar tamaño del texto">A+</button>
+        <button type="button" id="btn-contrast" aria-pressed="false">Alto contraste</button>
+        <button type="button" id="btn-motion" aria-pressed="false">Reducir animaciones</button>
+        <button type="button" id="btn-read" aria-pressed="false">Escuchar página</button>
+        <button type="button" id="btn-reset">Restablecer</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="UPI, Ubicador Personal Intuitivo, ir al inicio">
+        <span class="brand__mark" aria-hidden="true">◉</span> UPI
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#problema">El problema</a></li>
+          <li><a href="#ejes">Qué evaluamos</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#dispositivo">Dispositivo</a></li>
+          <li><a href="#retos">Retos</a></li>
+          <li><a href="#diseno">Diseño</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a class="btn btn--small" href="#contacto">Participa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="eyebrow">Revisión sistemática de la literatura</p>
+        <h1 id="hero-title">Moverse con autonomía y seguridad, también en lugares desconocidos</h1>
+        <p class="lead">Sintetizamos la evidencia sobre tecnologías portátiles de navegación asistida para personas con discapacidad visual: qué tan efectivas son, qué tan fáciles de usar y cuánto cuestan.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#ejes">Conocer la revisión</a>
+          <a class="btn btn--ghost" href="#contacto">Quiero participar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Cifras clave">
+      <div class="container stats__grid">
+        <div class="stat">
+          <p class="stat__num" data-count="2.2" data-decimals="1">2,2</p>
+          <p class="stat__label">mil millones de personas con algún grado de discapacidad visual en el mundo (OMS, 2026)</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num" data-count="89">89</p>
+          <p class="stat__label">estudios analizados en una revisión reciente sobre ayudas electrónicas portátiles (Mohd Romlay et al., 2023)</p>
+        </div>
+        <div class="stat">
+          <p class="stat__num" data-count="3">3</p>
+          <p class="stat__label">ejes de análisis: efectividad, usabilidad y asequibilidad económica</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="problema" class="section" aria-labelledby="problema-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="problema-title">Un desafío cotidiano</h2>
+          <p>Las personas con discapacidad visual enfrentan dificultades para desplazarse de manera autónoma y segura, sobre todo en espacios desconocidos o ante obstáculos imprevistos.</p>
+          <p>La rehabilitación visual incorpora bastones blancos y tecnologías digitales de asistencia para favorecer una movilidad independiente. Las tecnologías portátiles buscan <strong>complementar</strong>, no reemplazar, las herramientas tradicionales.</p>
+        </div>
+        <aside class="callout" aria-label="Dato destacado">
+          <p>Sensores, posicionamiento, inteligencia artificial y retroalimentación auditiva y háptica se combinan para detectar obstáculos y guiar en interiores y exteriores.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="ejes" class="section section--alt" aria-labelledby="ejes-title">
+      <div class="container">
+        <h2 id="ejes-title">Qué evaluamos</h2>
+        <p class="section__intro">Tres preguntas guían la revisión. Cada tarjeta se puede abrir con teclado o con un toque.</p>
+        <div class="cards">
+          <article class="card">
+            <h3><span aria-hidden="true">🎯</span> Efectividad</h3>
+            <p>¿Los dispositivos ayudan realmente a detectar obstáculos y a llegar al destino?</p>
+            <details>
+              <summary>Ver más</summary>
+              <p>Comparamos cómo cada estudio evalúa el desempeño, ya que los procedimientos de evaluación varían mucho entre propuestas.</p>
+            </details>
+          </article>
+          <article class="card">
+            <h3><span aria-hidden="true">🤝</span> Usabilidad</h3>
+            <p>¿Es cómodo, comprensible y agradable de usar en la vida diaria?</p>
+            <details>
+              <summary>Ver más</summary>
+              <p>Analizamos la experiencia de usuario, el confort y los métodos de interacción: voz, audio, vibración y otros.</p>
+            </details>
+          </article>
+          <article class="card">
+            <h3><span aria-hidden="true">💰</span> Asequibilidad</h3>
+            <p>¿Puede una persona común acceder a esta tecnología?</p>
+            <details>
+              <summary>Ver más</summary>
+              <p>El costo es uno de los desafíos persistentes y condiciona que la tecnología llegue a quienes la necesitan.</p>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="section" aria-labelledby="tec-title">
+      <div class="container">
+        <h2 id="tec-title">Tecnologías que se combinan</h2>
+        <p class="section__intro">Las soluciones revisadas integran distintos componentes. Selecciona una pestaña para explorar.</p>
+
+        <div class="tabs">
+          <div role="tablist" aria-label="Componentes tecnológicos">
+            <button role="tab" id="tab-sensores" aria-controls="panel-sensores" aria-selected="true">Sensores</button>
+            <button role="tab" id="tab-posicion" aria-controls="panel-posicion" aria-selected="false" tabindex="-1">Posicionamiento</button>
+            <button role="tab" id="tab-ia" aria-controls="panel-ia" aria-selected="false" tabindex="-1">Inteligencia artificial</button>
+            <button role="tab" id="tab-feedback" aria-controls="panel-feedback" aria-selected="false" tabindex="-1">Retroalimentación</button>
+          </div>
+          <div role="tabpanel" id="panel-sensores" aria-labelledby="tab-sensores" tabindex="0">
+            <p>Detectan obstáculos y características del entorno para anticipar riesgos en el recorrido.</p>
+          </div>
+          <div role="tabpanel" id="panel-posicion" aria-labelledby="tab-posicion" tabindex="0" hidden>
+            <p>Los sistemas de posicionamiento ubican a la persona y permiten orientarla en entornos interiores y exteriores.</p>
+          </div>
+          <div role="tabpanel" id="panel-ia" aria-labelledby="tab-ia" tabindex="0" hidden>
+            <p>La inteligencia artificial interpreta la información del entorno para convertirla en indicaciones útiles.</p>
+          </div>
+          <div role="tabpanel" id="panel-feedback" aria-labelledby="tab-feedback" tabindex="0" hidden>
+            <p>La información llega a la persona mediante señales auditivas y hápticas (vibración), según la preferencia y el contexto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dispositivo" class="section" aria-labelledby="disp-title">
+      <div class="container">
+        <h2 id="disp-title">Conoce el dispositivo</h2>
+        <p class="section__intro">Gíralo, acércalo y míralo desde cualquier ángulo. Arrastra con el mouse o el dedo; con teclado, enfoca el modelo y usa las flechas para girar y + / − para acercar.</p>
+        <p class="viewer__desc"><strong>Descripción del modelo:</strong> dispositivo de mano de 12,5 × 6,5 × 2,8 cm. En la parte superior tiene tres sensores de distancia ToF y un altavoz. Al frente tiene un botón central de asistente por voz, botones de encendido, inicio, hora y repetir, una cruceta direccional con punto táctil, controles de volumen, puntos Braille en relieve y un botón rojo SOS. Los laterales tienen agarre antideslizante y botones de volumen; abajo tiene puerto USB-C y una correa de muñeca.</p>
+
+        <div class="viewer" id="viewer-wrap">
+          <div id="upi-canvas" class="viewer__stage" role="img" tabindex="0"
+               aria-roledescription="modelo 3D interactivo"
+               aria-label="Modelo 3D del UPI, Ubicador Personal Intuitivo. Usa las flechas del teclado para girarlo, más y menos para acercar o alejar, y cero para restablecer la vista."></div>
+          <p class="viewer__error" id="viewer-error" role="alert" hidden>No se pudo iniciar el visor 3D. Tu navegador podría no admitir WebGL, o no se cargó la librería (requiere conexión a internet).</p>
+        </div>
+
+        <div class="viewer__controls" role="group" aria-label="Controles del modelo 3D">
+          <button type="button" class="btn btn--small" id="v-zoom-in">Acercar</button>
+          <button type="button" class="btn btn--small" id="v-zoom-out">Alejar</button>
+          <button type="button" class="btn btn--small btn--ghost" id="v-rotate" aria-pressed="true">Rotación automática: activada</button>
+          <button type="button" class="btn btn--small btn--ghost" id="v-reset">Restablecer vista</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="retos" class="section section--alt" aria-labelledby="retos-title">
+      <div class="container">
+        <h2 id="retos-title">Retos que persisten</h2>
+        <p class="section__intro">Aunque existe un amplio desarrollo de dispositivos, la evidencia muestra diferencias importantes y desafíos abiertos.</p>
+        <ol class="steps">
+          <li><strong>Experiencia de uso.</strong> No siempre se evalúa con las propias personas usuarias.</li>
+          <li><strong>Confort.</strong> Un dispositivo portátil debe poder llevarse cómodamente durante todo el día.</li>
+          <li><strong>Costo.</strong> Muchas soluciones resultan difíciles de costear.</li>
+          <li><strong>Evaluación heterogénea.</strong> Los métodos varían entre estudios, lo que dificulta compararlos.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="diseno" class="section" aria-labelledby="diseno-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="diseno-title">Hacia un diseño centrado en la persona</h2>
+          <p>Las revisiones recientes señalan la necesidad de considerar de forma conjunta los aspectos tecnológicos y los centrados en el usuario. Este estudio identifica características de diseño relevantes para orientar futuras soluciones.</p>
+        </div>
+        <ul class="checklist" aria-label="Principios de diseño">
+          <li>Complementar el bastón blanco, no sustituirlo</li>
+          <li>Mensajes claros por audio y vibración</li>
+          <li>Comodidad para uso prolongado</li>
+          <li>Precio accesible</li>
+          <li>Pruebas con personas usuarias reales</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Estas tecnologías reemplazan al bastón blanco?</summary>
+          <p>No. Están pensadas para complementar las herramientas tradicionales de movilidad.</p>
+        </details>
+        <details>
+          <summary>¿Qué es una revisión sistemática?</summary>
+          <p>Es un método que busca, selecciona y sintetiza de forma ordenada y transparente los estudios disponibles sobre un tema.</p>
+        </details>
+        <details>
+          <summary>¿Qué voy a encontrar en los resultados?</summary>
+          <p>Una síntesis sobre efectividad, usabilidad y asequibilidad, junto con características tecnológicas y de diseño relevantes.</p>
+        </details>
+        
+      </div>
+    </section>
+
+    <section id="contacto" class="section" aria-labelledby="contacto-title">
+      <div class="container container--narrow">
+        <h2 id="contacto-title">Participa y mantente informado</h2>
+        <p class="section__intro">Déjanos tus datos para recibir novedades y compartir tu experiencia.</p>
+        <form id="form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="err-nombre">
+            <p class="error" id="err-nombre" hidden>Escribe tu nombre.</p>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+            <p class="error" id="err-email" hidden>Escribe un correo válido, por ejemplo nombre@correo.com.</p>
+          </div>
+          <div class="field">
+            <label for="perfil">Me identifico como</label>
+            <select id="perfil" name="perfil">
+              <option>Persona con discapacidad visual</option>
+              <option>Familiar o cuidador</option>
+              <option>Profesional de rehabilitación</option>
+              <option>Investigador/a o desarrollador/a</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+          <button class="btn" type="submit">Enviar</button>
+          <p id="form-status" role="status" aria-live="polite" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> UPI, Ubicador Personal Intuitivo.</p>
+      <p><a href="#inicio">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
